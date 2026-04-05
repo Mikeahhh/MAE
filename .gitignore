@@ -1,0 +1,59 @@
+# Large generated data (regenerate via pipeline)
+data/generated/
+data/test_height/
+data/human_voice/
+
+# Keep raw audio sources (58MB, needed for reproduction)
+# data/drone/         ← INCLUDED
+# data/ambient/       ← INCLUDED
+
+# Full model weights (150GB+ — retrain via pipeline)
+results/sweep_*/
+results/freq_experiment_*/
+
+# Keep inference-only checkpoints (~1.2GB total)
+!results/checkpoints/
+
+# Keep evaluation results and figures
+!results/height_sweep_*/
+!results/figures/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# macOS
+.DS_Store
+._*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Internal / private
+Meeting_list/
+memory/
+docs/
+matlab/
+results/
+pipeline.log
+WIN_TRAINING_HANDOFF.md
+*.tmp
+*.fig
+
+# AI-related files
+AUDIT_AND_TUNE_REPORT.md
+CHANGELOG.md
+HPO_SEARCH_LOG.md
+need.txt
+MATH_CODE_ALIGNMENT_REPORT.md
+code_analysis_report.md
+literature_review*.md
+
+# Tests
+test_*.py
+*.pdf
+*.png

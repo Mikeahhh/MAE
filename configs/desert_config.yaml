@@ -1,0 +1,18 @@
+# Desert Scenario Configuration
+# Extends base_config.yaml with desert-specific parameters
+
+scenario: desert
+
+model:
+  mask_ratio: 0.10  # optimal — 100% presence accuracy (V4 100-MC sweep)
+
+audio:
+  norm_mean: -10.507
+  norm_std: 8.245
+
+# Data paths (relative to project root)
+data:
+  train_dir: "data/desert/train/normal"
+  test_normal_dir: "data/desert/test/normal"
+  test_anomaly_dir: "data/desert/test/anomaly"
+  long_test_dir: "data/long_test/desert"

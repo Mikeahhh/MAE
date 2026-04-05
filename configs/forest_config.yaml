@@ -1,0 +1,18 @@
+# Forest Scenario Configuration
+# Extends base_config.yaml with forest-specific parameters
+
+scenario: forest
+
+model:
+  mask_ratio: 0.10  # optimal — 92.0% presence accuracy (V4 100-MC sweep)
+
+audio:
+  norm_mean: -10.489
+  norm_std: 8.070
+
+# Data paths (relative to project root)
+data:
+  train_dir: "data/forest/train/normal"
+  test_normal_dir: "data/forest/test/normal"
+  test_anomaly_dir: "data/forest/test/anomaly"
+  long_test_dir: "data/long_test/forest"

@@ -1,0 +1,33 @@
+# Desert scenario simulation config
+# RT60 = 0.0s (no reverberation), mask_ratio = 0.10
+
+simulation:
+  env_type: "desert"
+  area_bounds: [0, 35, 0, 35]
+  flight_height: 5.0
+  velocity: 10.0
+  coverage_radius: 15.0
+  sampling_interval: 0.1
+
+  # SpecMAE checkpoint (best mask_ratio from V4 100-MC sweep)
+  checkpoint: "results/sweep_desert/mr_0.10/model.pth"
+
+  # Pure reconstruction detection (MC-averaged)
+  anomaly_threshold: 0.5
+  recon_n_passes: 100
+  recon_score_mode: "top_k"
+  recon_top_k_ratio: 0.30
+
+  # Acoustic simulation
+  use_full_acoustic_sim: true
+  rt60_desert: 0.0
+  rt60_forest: 0.6
+
+  # Localization
+  min_detection_points: 3
+  max_detection_points: 10
+
+  # Output
+  output_dir: "results/simulation/desert"
+  random_seed: 42
+  verbose: true
