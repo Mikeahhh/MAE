@@ -222,12 +222,15 @@ python3 -m SpecMae.scripts.eval.plot_3d_snr_flyover \
 **Included in repository:**
 - `data/drone/dji_sound.wav` (25 MB, 48kHz mono, DJI propeller)
 - `data/ambient/desert/` (10 MB, 3 files from Freesound.org)
-- `data/ambient/forest/` (23 MB, 7 files from Freesound.org)
+  - [Sound 645305 — desert wind](https://freesound.org/people/DarkShroom/sounds/645305/)
+  - [Sound 402710 — desert wind stereo](https://freesound.org/people/KasDonatov/sounds/402710/)
+  - [Sound 383243 — wind](https://freesound.org/people/beautifuldaymonster1968/sounds/383243/)
+- `data/ambient/forest/` (23 MB, 7 files from [Pixabay forest sound effects](https://pixabay.com/sound-effects/search/forest/))
 
 **Not included (obtain separately):**
 - `data/human_voice/Child_Cry_400_600Hz/` (8,639 clips)
 - `data/human_voice/Male_Rescue_100_300Hz/` (2,543 clips)
-- Source: ASVP-ESD corpus. Total: 11,182 clips.
+- Source: [ASVP-ESD corpus on Kaggle](https://www.kaggle.com/datasets/dejolilandry/asvpesdspeech-nonspeech-emotional-utterances). Total: 11,182 clips.
 
 ---
 
